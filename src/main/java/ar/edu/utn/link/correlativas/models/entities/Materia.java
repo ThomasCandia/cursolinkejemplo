@@ -1,4 +1,4 @@
-package ar.edu.utn.link.correlativas;
+package ar.edu.utn.link.correlativas.models.entities;
 
 import java.util.Collection;
 

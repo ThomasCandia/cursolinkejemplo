@@ -1,11 +1,13 @@
-package ar.edu.utn.link.correlativas;
+package ar.edu.utn.link.correlativas.models.entities;
 
+import javax.validation.constraints.NotNull;
 import java.util.Collection;
 import java.util.List;
 
 public class Alumno {
 	
 
+	@NotNull
 	private String nombre;
 	private List<Curso> cursos;
 	private Collection<Materia>  materiasAprovadas;

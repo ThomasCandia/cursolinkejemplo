@@ -1,5 +1,7 @@
 package ar.edu.utn.link.correlativas.models.entities;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import java.util.Collection;
 import java.util.List;
@@ -7,7 +9,8 @@ import java.util.List;
 public class Alumno {
 	
 
-	@NotNull
+	@Id @GeneratedValue
+	private Integer id;
 	private String nombre;
 	private List<Curso> cursos;
 	private Collection<Materia>  materiasAprovadas;
